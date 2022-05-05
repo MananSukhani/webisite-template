@@ -1,0 +1,150 @@
+body{
+    background-image: url(back1.jpg);
+    background-color: rgb(255, 255, 255);
+    /* background-blend-mode: darken; */
+    /* background-repeat: no-repeat; */
+    font-family: 'Ubuntu', sans-serif;
+    /* height: 1000px; */
+    /* width: auto; */
+   
+}
+
+.head {
+    background-color: rgb(49, 49, 49);
+    color: #edeff3;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 35px;
+    height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.headelement {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+
+.page {
+    padding: 10px;
+    
+}
+
+.link{
+  width: auto;
+}
+
+.link::after{
+  content: "";
+  display: block;
+  /* position: absolute; */
+  width: auto;
+  height: 3px;
+  background: rgb(255, 255, 255);
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+}
+
+.link:hover::after{
+  transform: scale(1);
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0px; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #eaecf1;;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    /* display: flex; */
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .sidenav a:hover {
+    color: #ffffff;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+#hamburger {
+  font-size: 20px;
+}
+
+.body_container {
+  height: fit-content;
+  width: auto;
+  padding: 20px;
+  margin: 20px;
+  /* border: 2px solid whitesmoke; */
+  border-radius: 15px;
+  background-color: rgb(49, 49, 49);
+  color: #edeff3;
+  overflow: hidden
+}
+.imageright{
+  width: 48%; /*image width*/
+  float: right; /*image position*/
+  padding: 1%;
+  margin-top: 2px;
+  }
+.textleft {
+  width: 48%;
+  float: left;
+  padding: 1%;
+  margin-top: 0px;
+}
+.imageleft{
+  width: 48%; /*image width*/
+  float: left; /*image position*/
+  padding: 1%;
+  margin-top: 2px;
+  }
+.textright {
+  width: 48%;
+  float: right;
+  padding: 1%;
+  margin-top: 0px;
+}
+.heading{
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
